@@ -2,12 +2,12 @@ package bootstrap.liftweb
 
 import net.liftweb._
 import http._
-import com.something.lift.MyRest
+import code.BasicRestExample
 
 class Boot {
 
   def boot {
-    LiftRules.statelessDispatchTable.append(MyRest)
+    LiftRules.statelessDispatch.append(BasicRestExample)
   }
 
 }

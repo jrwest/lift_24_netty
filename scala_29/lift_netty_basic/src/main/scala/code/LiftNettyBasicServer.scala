@@ -7,9 +7,8 @@ import java.util.concurrent.Executors
 import org.jboss.netty.bootstrap.ServerBootstrap
 import java.net.InetSocketAddress
 import org.jboss.netty.channel.ChannelFactory
+import net.liftweb.http.provider.netty.LiftPipelineFactory
 
-// TODO: change me to correct package when ready
-import com.something.lift.LiftPipelineFactory
 
 object LiftNettyBasicServer extends App {
 
