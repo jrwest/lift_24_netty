@@ -1,3 +1,5 @@
+import AssemblyKeys._ 
+
 name := "lift_netty_basic"
 
 libraryDependencies ++= Seq(
@@ -7,4 +9,9 @@ libraryDependencies ++= Seq(
 )
 
 scalaVersion := "2.9.1"
+
+seq(assemblySettings: _*)
+
+mainClass in assembly := Some("code.LiftNettyBasicServer")
+
 
